@@ -47,7 +47,7 @@ To integrate the CBAM module into the YOLO11 framework, follow these steps:
 
 ### 3.2 Using Shape-IoU Loss
 
-In this study, we replaced the original CIoU loss function in YOLO11 with the Shape-IoU loss [2] function to enhance the accuracy of bounding box regression for small plant targets. To implement Shape-IoU in YOLOv8, follow the instructions below.
+In this study, we replaced the original CIoU loss function in YOLO11 with the Shape-IoU loss [2] function to enhance the accuracy of bounding box regression for small plant targets. To implement Shape-IoU in YOLO11, follow the instructions below.
 
 - Import `shape_iou` (the `shape_iou_loss.py` file can be found in the `code` directory of this repository) into `ultralytics/utils/loss.py`.
 
