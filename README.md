@@ -1,8 +1,8 @@
-# Optimizing YOLO11 for Lightweight and Accurate UAV-based Plant Detection
+# YOLO11 Optimization for Lightweight and Accurate Plant Detection in UAV Aerial Imagery
 
 ## 1. Overview
 
-This repository contains the code supporting the article **"Optimizing YOLO11 for Lightweight and Accurate UAV-based Plant Detection"**, which is currently under peer review.
+This repository contains the code supporting the article **"YOLO11 Optimization for Lightweight and Accurate Plant Detection in UAV Aerial Imagery"**, which is currently under peer review.
 
 YOLO configuration files supporting the experiments in the paper can be found in the `cfgs` folder.
 
