@@ -3,6 +3,7 @@
 # IMPORTANT: Ensure to follow the User Guide instructions for implementing and using Shape-IoU properly.
 ####################
 
+
 # Parameters
 nc: 4 # number of classes
 scales:
