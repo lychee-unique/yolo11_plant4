@@ -9,13 +9,21 @@ YOLO configuration files supporting the experiments in the paper can be found in
 The `cfgs` folder contains two subfolders:
 
 - **`Ablation Study`**: Includes configuration files for all models used in the Ablation Study section of the paper.
-- **`SOTA Comparison`**: Contains configuration files for our proposed YOLO11 models used in the "Comparison with State-of-the-Art Methods" section of the paper.
+- **`SOTA Comparison`**: Configuration files for all models used in the paper’s **Comparison with State-of-the-Art Methods** and **Transfer Learning Study** sections.
 
 The paper introduces three optimization strategies. The P2AR strategy can be located in the YAML model configuration files under the `cfgs` folder. The integration and use of the CBAM module and Shape-IoU Loss require modifications to the code in the `ultralytics/nn/modules` directory within the YOLO11 project. Detailed instructions can be found in the **User Guide** section.
 
 ## 2. Dataset
 
-The datasets mentioned in the paper, including CBDA, MTDC-UAV, RFRB, and WEDU, are available at [GitHub - Ye-Sk/Plant-dataset: CBDA and WEDU datasets](https://github.com/Ye-Sk/Plant-dataset). The corresponding original paper is titled *Plant Detection and Counting: Enhancing Precision Agriculture in UAV and General Scenes* [1]. 
+The four original single-class datasets referenced in the paper can be downloaded from the authors’ repositories:
+
+- **CBDA (Cotton Boll Detection Augmented)** and **WEDU (Wheat Ears Detection Update)** — [Ye-Sk / Plant-dataset](https://github.com/Ye-Sk/Plant-dataset)
+- **MTDC-UAV (Maize Tassel Detection and Counting)** — [git.io/MTDC](https://git.io/MTDC)
+- **RFRB (Rape Flower Rectangular Box Labeling)** — [CV-Wang / RapeNet](https://github.com/CV-Wang/RapeNet)
+
+
+
+
 
 The annotation files for the merged Plant4 dataset can be found in the `dataset` folder of this repository.
 
