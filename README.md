@@ -21,8 +21,8 @@ The four original single-class datasets referenced in the paper can be downloade
 - **MTDC-UAV (Maize Tassel Detection and Counting-UAV)** — [Ye-Sk/MTDC-UAV](https://github.com/Ye-Sk/MTDC-UAV) [2]
 - **RFRB (Rape Flower Rectangular Box Labeling)** — [CV-Wang / RapeNet](https://github.com/CV-Wang/RapeNet) [3]
 
-This repository’s `data/` directory contains the YOLO-format annotations and the YAML configuration used in the paper for training and evaluation.  
-Use the following folder structure to recreate the Plant4 dataset as in the paper:
+The YOLO-format annotations used in this paper for the Plant4 dataset can be found in this repository’s `data/` directory, along with the YAML configuration for training and evaluation.  
+Use the following folder structure to recreate the Plant4 dataset as described in the paper:
 
 ```text
 data/ 
