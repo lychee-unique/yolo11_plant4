@@ -8,7 +8,7 @@ YOLO configuration files supporting the experiments in the paper can be found in
 
 The `cfgs` folder contains two subfolders:
 
-- **`Ablation Study`**: Includes configuration files for all models used in the Ablation Study section of the paper.
+- **`Ablation Study`**: Includes configuration files for all models used in the **Ablation Study** section of the paper.
 - **`SOTA Comparison`**: Configuration files for all models used in the paper’s **Comparison with State-of-the-Art Methods** and **Transfer Learning Study** sections.
 
 The paper introduces three optimization strategies. The P2AR strategy can be located in the YAML model configuration files under the `cfgs` folder. The integration and use of the CBAM module and Shape-IoU Loss require modifications to the code in the `ultralytics/nn/modules` directory within the YOLO11 project. Detailed instructions can be found in the **User Guide** section.
