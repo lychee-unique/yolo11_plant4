@@ -45,7 +45,7 @@ sys.path.insert(0, r'../ultralytics')  # Add YOLO11 repository path to system pa
 from ultralytics import YOLO
 
 if __name__ == '__main__':
-    model = YOLO(r"./ours.yaml")  # Load model architecture from custom config
+    model = YOLO(r"./ours.yaml")  # Load model architecture from specific config
     train_results = model.train(
         data=r"./plant4.yaml",      # Path to dataset YAML file
         epochs=300,                 # Number of training epochs
@@ -54,6 +54,7 @@ if __name__ == '__main__':
         project="plant4",           # Root directory for training outputs
         name="ours"                 # Subdirectory name for this experiment
     )
+
 
 ```
 
