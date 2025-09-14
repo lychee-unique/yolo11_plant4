@@ -18,7 +18,7 @@ The paper introduces three optimization strategies. The P2AR strategy can be loc
 The four original single-class datasets referenced in the paper can be downloaded from the authors’ repositories:
 
 - **CBDA (Cotton Boll Detection Augmented)** and **WEDU (Wheat Ears Detection Update)** — [Ye-Sk / Plant-dataset](https://github.com/Ye-Sk/Plant-dataset)
-- **MTDC-UAV (Maize Tassel Detection and Counting)** — [git.io/MTDC](https://git.io/MTDC)
+- **MTDC-UAV (Maize Tassel Detection and Counting)** — [Ye-Sk/MTDC-UAV](https://github.com/Ye-Sk/MTDC-UAV))
 - **RFRB (Rape Flower Rectangular Box Labeling)** — [CV-Wang / RapeNet](https://github.com/CV-Wang/RapeNet)
 
 
@@ -32,7 +32,7 @@ data/
 ├── plant4.yaml    # dataset config file for training and evaluation of YOLO models; please set `path:` to your dataset root
 └── images/        # please create the `images` folder and its two subfolders `train` and `test`
     ├──── train/   # place the TRAIN split files from the original CBDA, WEDU, MTDC, and RFRB datasets here  
-    └──── test/# place the VAL and TEST split files from the original CBDA, WEDU, MTDC, and RFRB datasets here
+    └──── test/    # place the VAL and TEST split files from the original CBDA, WEDU, MTDC, and RFRB datasets here
 ```
 
 
