@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
 For additional options and full parameter documentation, refer to the [official Ultralytics YOLO documentation](https://docs.ultralytics.com/usage/cfg/).
 
-### 3.1 Integrating the CBAM Module into YOLO11
+### 3.2 Integrating the CBAM Module into YOLO11
 
 To integrate the CBAM module into the YOLO11 framework, follow these steps:
 
@@ -81,7 +81,7 @@ To integrate the CBAM module into the YOLO11 framework, follow these steps:
 
 3. Update the YOLO11 model's YAML configuration file to include the `CBAM` module. Example configurations can be found in the `cfgs` directory of this repository.
 
-### 3.2 Using Shape-IoU Loss
+### 3.3 Using Shape-IoU Loss
 
 In this study, we replaced the original CIoU loss function in YOLO11 with the Shape-IoU loss [4] function to enhance the accuracy of bounding box regression for small plant targets. To implement Shape-IoU in YOLO11, follow the instructions below.
 
