@@ -28,10 +28,10 @@ Use the following folder structure to recreate the Plant4 dataset as in the pape
 
 ```text
 data/ 
-├── labels/              # YOLO-format annotation files  
-├── plant4.yaml     # dataset config file for training and evaluation of YOLO models; please set `path:` to your dataset root
-└── images/          # please create the `images` folder and its two subfolders `train` and `test`
-├──── train/ # place the TRAIN split files from the original CBDA, WEDU, MTDC, and RFRB datasets here  
+├── labels/        # YOLO-format annotation files  
+├── plant4.yaml    # dataset config file for training and evaluation of YOLO models; please set `path:` to your dataset root
+└── images/        # please create the `images` folder and its two subfolders `train` and `test`
+├──── train/       # place the TRAIN split files from the original CBDA, WEDU, MTDC, and RFRB datasets here  
 └──── test/ # place the VAL and TEST split files from the original CBDA, WEDU, MTDC, and RFRB datasets here
 ```
 
