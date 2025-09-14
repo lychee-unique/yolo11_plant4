@@ -1,0 +1,14 @@
+
+
+path: /home/user/datasets/plant/plant4 # dataset root dir
+train: images/train # train images
+test: images/test # test images
+val: images/test
+
+# Classes
+names:
+  0: Cotton
+  1: Maize
+  2: Rape
+  3: Wheat
+

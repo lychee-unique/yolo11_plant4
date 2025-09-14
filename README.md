@@ -23,9 +23,17 @@ The four original single-class datasets referenced in the paper can be downloade
 
 
 
+This repository’s `data/` directory contains the YOLO-format annotations and the YAML configuration used in the paper for training and evaluation.  
+Use the following folder structure to recreate the Plant4 dataset as in the paper:
+
+data/ 
+├── labels/              # YOLO-format annotation files  
+├── plant4.yaml     # dataset config file for training and evaluation of YOLO models; please set `path:` to your dataset root
+└── images/           # please create the `images` folder and its two subfolders `train` and `test`
+├──── train/ # place the TRAIN split files from the original CBDA, WEDU, MTDC, and RFRB datasets here  
+└──── test/ # place the VAL and TEST split files from the original CBDA, WEDU, MTDC, and RFRB datasets here
 
 
-The annotation files for the merged Plant4 dataset can be found in the `dataset` folder of this repository.
 
 ## 3. User Guide
 
