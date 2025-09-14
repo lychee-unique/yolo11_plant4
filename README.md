@@ -21,8 +21,6 @@ The four original single-class datasets referenced in the paper can be downloade
 - **MTDC-UAV (Maize Tassel Detection and Counting-UAV)** — [Ye-Sk/MTDC-UAV](https://github.com/Ye-Sk/MTDC-UAV) [2]
 - **RFRB (Rape Flower Rectangular Box Labeling)** — [CV-Wang / RapeNet](https://github.com/CV-Wang/RapeNet) [3]
 
-
-
 This repository’s `data/` directory contains the YOLO-format annotations and the YAML configuration used in the paper for training and evaluation.  
 Use the following folder structure to recreate the Plant4 dataset as in the paper:
 
@@ -35,9 +33,31 @@ data/
     └──── test/    # place the VAL and TEST split files from the original CBDA, WEDU, MTDC-UAV, and RFRB datasets here
 ```
 
-
-
 ## 3. User Guide
+
+### 3.1 Training and Evaluating YOLO Models
+
+To train and evaluate a YOLO model using the configuration files provided in this repository, follow the example below. This script loads a custom model defined in `ours.yaml` and trains it on the `plant4.yaml` dataset.
+
+```python
+import sys
+sys.path.insert(0, r'../ultralytics')  # Add YOLO11 repository path to system path
+from ultralytics import YOLO
+
+if __name__ == '__main__':
+    model = YOLO(r"./ours.yaml")  # Load model architecture from custom config
+    train_results = model.train(
+        data=r"./plant4.yaml",      # Path to dataset YAML file
+        epochs=300,                 # Number of training epochs
+        imgsz=640,                  # Input image size
+        batch=8,                    # Batch size
+        project="plant4",           # Root directory for training outputs
+        name="ours"                 # Subdirectory name for this experiment
+    )
+
+```
+
+For additional options and full parameter documentation, refer to the [official Ultralytics YOLO documentation](https://docs.ultralytics.com/usage/cfg/).
 
 ### 3.1 Integrating the CBAM Module into YOLO11
 
@@ -60,8 +80,6 @@ To integrate the CBAM module into the YOLO11 framework, follow these steps:
    This ensures proper handling and integration of the `CBAM` module within the YOLO11 model architecture.
 
 3. Update the YOLO11 model's YAML configuration file to include the `CBAM` module. Example configurations can be found in the `cfgs` directory of this repository.
-
-
 
 ### 3.2 Using Shape-IoU Loss
 
