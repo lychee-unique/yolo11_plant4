@@ -1,8 +1,10 @@
 # YOLO11 Optimization for Lightweight and Accurate Plant Detection in UAV Aerial Imagery
 
+[![DOI](https://zenodo.org/badge/907699807.svg)](https://doi.org/10.5281/zenodo.17163310)
+
 ## 1. Overview
 
-This repository contains the code supporting the article **"YOLO11 Optimization for Lightweight and Accurate Plant Detection in UAV Aerial Imagery"**, which is currently under peer review.
+This repository contains the code supporting the article **"You Look Only Once 11 (YOLO11) Optimization for Lightweight and Accurate Plant Detection in unmanned aerial vehicle (UAV) imagery"**, which is currently under peer review.
 
 YOLO configuration files supporting the experiments in the paper can be found in the `cfgs` folder.
 
@@ -54,8 +56,6 @@ if __name__ == '__main__':
         project="plant4",           # Root directory for training outputs
         name="ours"                 # Subdirectory name for this experiment
     )
-
-
 ```
 
 For additional options and full parameter documentation, refer to the [official Ultralytics YOLO documentation](https://docs.ultralytics.com/usage/cfg/).
